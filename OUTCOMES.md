@@ -282,10 +282,10 @@ Rate your confidence level for each topic (1-5, where 5 is very confident):
 | Basic Git commands | [4 ] | |
 | Branching & merging | [4 ] | |
 | Remote operations | [4 ] | |
-| Conflict resolution | [ 1] | | not covered yet and i haven't faced any conflicts yet
-| History rewriting | [1 ] | | not covered yet
-| Git hooks | [ 1] | | not covered yet
-| Security practices | [1 ] | | not convered yet
+| Conflict resolution | [ ] | | not covered yet and i haven't faced any conflicts yet
+| History rewriting | [ ] | | not covered yet
+| Git hooks | [ ] | | not covered yet
+| Security practices | [ ] | | not convered yet
 
 ---
 
