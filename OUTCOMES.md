@@ -96,10 +96,10 @@ git commit -m "Merge footer with resolved conflicts"
 ---
 
 ## 💬 Personal Reflection
-What surprised me: I didn’t expect Git to show both versions in the same file with markers. 
-What I found most difficult: Resolving the conflict the first time was tricky because I didn’t know which part to keep.
-What I found most useful: Learning about tags and their purpose for versioning.
-How I would apply this in real projects: I will use annotated tags for releases and lightweight tags for quick internal references. Conflict resolution will help me in collaborative projects where multiple people edit the same files.
+What surprised me: I didn’t expect Git to show both versions of the conflicting content in the same file with clear markers. This approach makes it easier to understand what happened during the merge and gives full control to the developer to decide what to keep. It showed me how Git is designed to handle collaboration in a very transparent way.
+What I found most difficult: Resolving the conflict the first time was tricky because I wasn’t sure which part belonged to which branch. Understanding the meaning of <<<<<<< HEAD, =======, and >>>>>>> branch-name took some time, but once I understood them, the process became much easier.
+What I found most useful: Learning a lot about tags and their purpose for versioning was very valuable. Annotated tags are great for official releases, while lightweight tags are valueable for quick internal references.
+How I would apply this in real projects: I will use annotated tags for stable releases and lightweight tags for temporary checkpoints. Conflict resolution skills will help me work effectively in teams where multiple people edit the same files.
 
 ---
 
@@ -118,7 +118,7 @@ How I would apply this in real projects: I will use annotated tags for releases 
 
 ## 🔗 Evidence/Artifacts
 **Links to branches/commits**:
-- Outcome branch: `https://github.com/miguel-oltra/taller-master-ugr/tree/group-X-outcomes/intermediate`
+- Outcome branch: https://github.com/asmajabr/taller-master-ugr/tree/i-have-nogroup-outcomes/intermediate
 - Key commits:
   - c05829d (HEAD -> i-have-nogroup-outcomes/intermediate, tag: v1.0-test, tag: v1.0, intermediate) Merge footer with resolved conflicts
   - 01dd273 (feature/footer) Add Footer to page
