@@ -137,7 +137,18 @@ Rebasing a branch clarified why teams prefer linear history for clarity, but als
 ---
 
 ## 🔗 Evidence
-- Outcome branch: `i-have-nogroup-outcomes/master`
-- Screenshots: *[Add screenshots of logs and rebase editor]*
+- Outcome branch: https://github.com/asmajabr/taller-master-ugr/tree/i-have-nogroup-outcomes/master
+- Screenshots: <img width="1128" height="570" alt="reword" src="https://github.com/user-attachments/assets/49ed13ff-a067-4672-99d2-8232bb2ea8c8" />
+<img width="999" height="268" alt="rebase2" src="https://github.com/user-attachments/assets/266150e7-dd59-4ea4-87f3-4a179b82e2b0" />
+<img width="909" height="184" alt="rebase_history" src="https://github.com/user-attachments/assets/23bf37a0-bcda-4576-b320-0031b2f2fb7b" />
+<img width="1050" height="229" alt="rebase_branch2" src="https://github.com/user-attachments/assets/afdfb357-af41-4cd9-87f5-d8d6fd770d89" />
+<img width="1039" height="428" alt="rebase_branch" src="https://github.com/user-attachments/assets/3e2e4977-6e07-4ed2-af83-fffed3ab08f2" />
+<img width="818" height="521" alt="rebase" src="https://github.com/user-attachments/assets/f21116b5-17cf-4d97-b01c-92e0ce28bf31" />
+<img width="1058" height="394" alt="gitlog_" src="https://github.com/user-attachments/assets/fef2dcec-b2ed-4da6-ae9d-3ca6e3f951e8" />
+<img width="1120" height="692" alt="gitlog" src="https://github.com/user-attachments/assets/ac93c3d9-206f-4fbb-9d25-c53c4e65f2b4" />
+<img width="1058" height="394" alt="examine_sha" src="https://github.com/user-attachments/assets/f17d94d5-b9c2-4003-aa3e-3ca8b048b047" />
+<img width="1136" height="604" alt="commands_history2" src="https://github.com/user-attachments/assets/cb29a2e2-119c-4c3c-af59-29b875551032" />
+<img width="1053" height="707" alt="commands_history" src="https://github.com/user-attachments/assets/0026fcbf-2e49-4dde-b201-bbeb3f8ceb8f" />
+
 
 ✅ Ready for Review.
