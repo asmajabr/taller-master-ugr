@@ -1,0 +1,3 @@
+Name: Asma Jaradat
+Favorite Language: Python
+Why I'm learning Git: To master version control for projects and excel at my work as a devops
