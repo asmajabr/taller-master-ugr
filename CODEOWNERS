@@ -75,7 +75,7 @@
 # Protect the master branch README and exercise content
 # Note: Uses branch-specific path syntax that GitHub recognizes
 [main]
-* @miguel-oltra
+* @asmajabr
 
 # ==============================================================================
 # ALL OTHER BRANCHES ARE OPEN
@@ -123,7 +123,7 @@
 #
 # If you want to create teams for code review automation:
 #
-# @miguel-oltra - Repository owner and lead instructor (required)
+# @asmajabr - Repository owner and lead instructor (required)
 #
 # Optional teams (can be created later):
 # @git-flow-experts - Review branching strategy implementations
