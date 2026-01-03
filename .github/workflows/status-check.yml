@@ -1,15 +1,18 @@
 
 name: Status Check
 on:
+  workflow_dispatch:   # <-- manual trigger from the Actions tab
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
 jobs:
   build:
+    name: build  # explicit job name (optional but clearer)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run a simple check
         run: echo "✅ Status check passed"
+
