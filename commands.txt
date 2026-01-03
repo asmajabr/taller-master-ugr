@@ -1,0 +1,560 @@
+
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ gpg --full-generate-key
+gpg (GnuPG) 2.4.8; Copyright (C) 2025 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Please select what kind of key you want:
+   (1) RSA and RSA
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (9) ECC (sign and encrypt) *default*
+  (10) ECC (sign only)
+  (14) Existing key from card
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 2Y
+Key expires at Mon Jan  3 00:26:12 2028 RST
+Is this correct? (y/N) Y
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: asmajabr
+Email address: asmajabr@gmail.com
+Comment: GPG keygen
+You selected this USER-ID:
+    "asmajabr (GPG keygen) <asmajabr@gmail.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: /c/Users/Administrator/.gnupg/trustdb.gpg: trustdb created
+gpg: directory '/c/Users/Administrator/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/c/Users/Administrator/.gnupg/openpgp-revocs.d/F76A5FB3A01DC002A4858D6940E49CED14881D32.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2026-01-02 [SC] [expires: 2028-01-02]
+      F76A5FB3A01DC002A4858D6940E49CED14881D32
+uid                      asmajabr (GPG keygen) <asmajabr@gmail.com>
+sub   rsa4096 2026-01-02 [E] [expires: 2028-01-02]
+
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ gpg --list-secret-keys --keyid-format=long
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2028-01-02
+[keyboxd]
+---------
+sec   rsa4096/40E49CED14881D32 2026-01-02 [SC] [expires: 2028-01-02]
+      F76A5FB3A01DC002A4858D6940E49CED14881D32
+uid                 [ultimate] asmajabr (GPG keygen) <asmajabr@gmail.com>
+ssb   rsa4096/1C6298A4EB3B4BD5 2026-01-02 [E] [expires: 2028-01-02]
+
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ gpg --armor --export  F76A5FB3A01DC002A4858D6940E49CED14881D32
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+MAdVpqyDjbflLqg+l8WBDpUQXbyK
+=zzJy
+-----END PGP PUBLIC KEY BLOCK-----
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git config --global user.signingkey F76A5FB3A01DC002A4858D6940E49CED14881D32
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git config --global commit.gpgsign true
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ gpg --edit-key 1C6298A4EB3B4BD5
+gpg (GnuPG) 2.4.8; Copyright (C) 2025 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Secret key is available.
+
+sec  rsa4096/40E49CED14881D32
+     created: 2026-01-02  expires: 2028-01-02  usage: SC
+     trust: ultimate      validity: ultimate
+ssb  rsa4096/1C6298A4EB3B4BD5
+     created: 2026-01-02  expires: 2028-01-02  usage: E
+[ultimate] (1). asmajabr (GPG keygen) <asmajabr@gmail.com>
+
+gpg> adduid
+Real name: asmajabr
+Email address: asmajabr@gmail.com
+Comment: github-gpg key
+You selected this USER-ID:
+    "asmajabr (github-gpg key) <asmajabr@gmail.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+
+sec  rsa4096/40E49CED14881D32
+     created: 2026-01-02  expires: 2028-01-02  usage: SC
+     trust: ultimate      validity: ultimate
+ssb  rsa4096/1C6298A4EB3B4BD5
+     created: 2026-01-02  expires: 2028-01-02  usage: E
+[ultimate] (1)  asmajabr (GPG keygen) <asmajabr@gmail.com>
+[ unknown] (2). asmajabr (github-gpg key) <asmajabr@gmail.com>
+
+gpg> save
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ echo "Signed commit test 1" > signed-1.txt
+git add signed-1.txt
+git commit -S -m "feat: Add first signed commit"
+
+echo "Signed commit test 2" > signed-2.txt
+git add signed-2.txt
+git commit -S -m "feat: Add second signed commit"
+
+git log --show-signature -2
+warning: in the working copy of 'signed-1.txt', LF will be replaced by CRLF the next time Git touches it
+[feature/protected-workflow 0e1cd28] feat: Add first signed commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 signed-1.txt
+ create mode 100644 workflow.txt
+warning: in the working copy of 'signed-2.txt', LF will be replaced by CRLF the next time Git touches it
+[feature/protected-workflow 745bf1a] feat: Add second signed commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 signed-2.txt
+commit 745bf1a3699a908423f3ead9b56361365118a9ae (HEAD -> feature/protected-workflow)
+gpg: Signature made Sat Jan  3 00:49:19 2026 RST
+gpg:                using RSA key F76A5FB3A01DC002A4858D6940E49CED14881D32
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2028-01-02
+gpg: Good signature from "asmajabr (github-gpg key) <asmajabr@gmail.com>" [ultimate]
+gpg:                 aka "asmajabr (GPG keygen) <asmajabr@gmail.com>" [ultimate]
+Author: ASMA JARADAT <asmajabr@gmail.com>
+Date:   Sat Jan 3 00:49:19 2026 +0100
+
+    feat: Add second signed commit
+
+commit 0e1cd28cd33ad17fe822068cc9f867e23e10cc50
+gpg: Signature made Sat Jan  3 00:49:14 2026 RST
+gpg:                using RSA key F76A5FB3A01DC002A4858D6940E49CED14881D32
+gpg: Good signature from "asmajabr (github-gpg key) <asmajabr@gmail.com>" [ultimate]
+gpg:                 aka "asmajabr (GPG keygen) <asmajabr@gmail.com>" [ultimate]
+Author: ASMA JARADAT <asmajabr@gmail.com>
+Date:   Sat Jan 3 00:49:14 2026 +0100
+
+    feat: Add first signed commit
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git push origin feature/protected-workflow
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git remote -v
+origin  git@github.com:asmajabr/taller-master-ugr.git (fetch)
+origin  git@github.com:asmajabr/taller-master-ugr.git (push)
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ ls -la ~/.ssh
+total 32
+drwxr-xr-x 1 Administrator 197121   0 Jan  1 20:28 ./
+drwxr-xr-x 1 Administrator 197121   0 Jan  3 00:49 ../
+drwxr-xr-x 1 Administrator 197121   0 Jan  1 00:50 agent/
+-rw-r--r-- 1 Administrator 197121   2 Dec 14 23:54 config
+-rw-r--r-- 1 Administrator 197121 411 Jan  1 00:48 gitsshkey
+-rw-r--r-- 1 Administrator 197121 100 Jan  1 00:48 gitsshkey.pub
+-rw-r--r-- 1 Administrator 197121 828 Jan  1 20:28 known_hosts
+-rw-r--r-- 1 Administrator 197121  92 Jan  1 00:28 known_hosts.old
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ cat ~/.ssh/gitsshkey.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBwGzNR7yLjIOJuEMf5mLfxDxHPNQvYMkNN7zvmvlmSQ asmajabr@gmail.com
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ ssh-add -l
+Could not open a connection to your authentication agent.
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/gitsshkey
+Agent pid 2503
+Identity added: /c/Users/Administrator/.ssh/gitsshkey (asmajabr@gmail.com)
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ ssh -vT git@github.com
+debug1: OpenSSH_10.2p1, OpenSSL 3.5.4 30 Sep 2025
+debug1: Reading configuration data /c/Users/Administrator/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Connecting to github.com [140.82.121.4] port 22.
+debug1: Connection established.
+debug1: no pubkey loaded from /c/Users/Administrator/.ssh/id_rsa
+debug1: identity file /c/Users/Administrator/.ssh/id_rsa type -1
+debug1: no identity pubkey loaded from /c/Users/Administrator/.ssh/id_rsa
+debug1: no pubkey loaded from /c/Users/Administrator/.ssh/id_ecdsa
+debug1: identity file /c/Users/Administrator/.ssh/id_ecdsa type -1
+debug1: no identity pubkey loaded from /c/Users/Administrator/.ssh/id_ecdsa
+debug1: no pubkey loaded from /c/Users/Administrator/.ssh/id_ecdsa_sk
+debug1: identity file /c/Users/Administrator/.ssh/id_ecdsa_sk type -1
+debug1: no identity pubkey loaded from /c/Users/Administrator/.ssh/id_ecdsa_sk
+debug1: no pubkey loaded from /c/Users/Administrator/.ssh/id_ed25519
+debug1: identity file /c/Users/Administrator/.ssh/id_ed25519 type -1
+debug1: no identity pubkey loaded from /c/Users/Administrator/.ssh/id_ed25519
+debug1: no pubkey loaded from /c/Users/Administrator/.ssh/id_ed25519_sk
+debug1: identity file /c/Users/Administrator/.ssh/id_ed25519_sk type -1
+debug1: no identity pubkey loaded from /c/Users/Administrator/.ssh/id_ed25519_sk
+debug1: Local version string SSH-2.0-OpenSSH_10.2
+debug1: Remote protocol version 2.0, remote software version aae3c6b
+debug1: compat_banner: no match: aae3c6b
+debug1: Authenticating to github.com:22 as 'git'
+debug1: load_hostkeys: fopen /c/Users/Administrator/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: sntrup761x25519-sha512
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+debug1: load_hostkeys: fopen /c/Users/Administrator/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'github.com' is known and matches the ED25519 host key.
+debug1: Found key in /c/Users/Administrator/.ssh/known_hosts:1
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256,rsa-sha2-512,rsa-sha2-256,ssh-rsa>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: agent returned 1 keys
+debug1: Will attempt key: asmajabr@gmail.com ED25519 SHA256:pOnlTfxzTLrt2KxRJnizRETKC1F/RCB9kHatblhgqNc agent
+debug1: Will attempt key: /c/Users/Administrator/.ssh/id_rsa
+debug1: Will attempt key: /c/Users/Administrator/.ssh/id_ecdsa
+debug1: Will attempt key: /c/Users/Administrator/.ssh/id_ecdsa_sk
+debug1: Will attempt key: /c/Users/Administrator/.ssh/id_ed25519
+debug1: Will attempt key: /c/Users/Administrator/.ssh/id_ed25519_sk
+debug1: Offering public key: asmajabr@gmail.com ED25519 SHA256:pOnlTfxzTLrt2KxRJnizRETKC1F/RCB9kHatblhgqNc agent
+debug1: Server accepts key: asmajabr@gmail.com ED25519 SHA256:pOnlTfxzTLrt2KxRJnizRETKC1F/RCB9kHatblhgqNc agent
+Authenticated to github.com ([140.82.121.4]:22) using "publickey".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /c/Users/Administrator/.ssh/known_hosts for github.com / (none)
+debug1: client_input_hostkeys: searching /c/Users/Administrator/.ssh/known_hosts2 for github.com / (none)
+debug1: client_input_hostkeys: hostkeys file /c/Users/Administrator/.ssh/known_hosts2 does not exist
+debug1: client_input_hostkeys: no new or deprecated keys from server
+debug1: pledge: fork
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+Hi asmajabr! You've successfully authenticated, but GitHub does not provide shell access.
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3408, received 3736 bytes, in 0.3 seconds
+Bytes per second: sent 11148.4, received 12221.4
+debug1: Exit status 1
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git push origin feature/protected-workflow
+To github.com:asmajabr/taller-master-ugr.git
+ ! [rejected]        feature/protected-workflow -> feature/protected-workflow (fetch first)
+error: failed to push some refs to 'github.com:asmajabr/taller-master-ugr.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git push --force-with-lease origin feature/protected-workflow
+To github.com:asmajabr/taller-master-ugr.git
+ ! [rejected]        feature/protected-workflow -> feature/protected-workflow (stale info)
+error: failed to push some refs to 'github.com:asmajabr/taller-master-ugr.git'
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git status
+On branch feature/protected-workflow
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        PR1.PNG
+        PR2.PNG
+        PR_MERGE.PNG
+        PR_REVIEW.PNG
+        featurepush.PNG
+        gog.PNG
+        pr_fail.PNG
+        push_fail.PNG
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git add .
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git commit -m 'add print screens'
+[feature/protected-workflow b5ce24b] add print screens
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PR1.PNG
+ create mode 100644 PR2.PNG
+ create mode 100644 PR_MERGE.PNG
+ create mode 100644 PR_REVIEW.PNG
+ create mode 100644 featurepush.PNG
+ create mode 100644 gog.PNG
+ create mode 100644 pr_fail.PNG
+ create mode 100644 push_fail.PNG
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git push origin feature/protected-workflow
+To github.com:asmajabr/taller-master-ugr.git
+ ! [rejected]        feature/protected-workflow -> feature/protected-workflow (fetch first)
+error: failed to push some refs to 'github.com:asmajabr/taller-master-ugr.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git fetch origin
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 24 (delta 4), reused 4 (delta 4), pack-reused 17 (from 2)
+Unpacking objects: 100% (24/24), 31.69 KiB | 213.00 KiB/s, done.
+From github.com:asmajabr/taller-master-ugr
+   b0fb9dc..493b871  feature/protected-workflow -> origin/feature/protected-workflow
+   8bbb9e9..fbf521f  i-have-nogroup-outcomes/intermediate -> origin/i-have-nogroup-outcomes/intermediate
+   5de5773..4203f2b  i-have-nogroup-outcomes/master -> origin/i-have-nogroup-outcomes/master
+   1045fea..f4226a4  i-have-nogroup-outcomes/newbie -> origin/i-have-nogroup-outcomes/newbie
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git pull --rebase origin feature/protected-workflo
+fatal: couldn't find remote ref feature/protected-workflo
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git pull --rebase origin feature/protected-workflow
+From github.com:asmajabr/taller-master-ugr
+ * branch            feature/protected-workflow -> FETCH_HEAD
+Successfully rebased and updated refs/heads/feature/protected-workflow.
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git push --force-with-lease origin feature/protected-workflow
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (17/17), 357.31 KiB | 3.34 MiB/s, done.
+Total 17 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:asmajabr/taller-master-ugr.git
+   493b871..9a03c4d  feature/protected-workflow -> feature/protected-workflow
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git log -p | grep -i "password\|api_key\|secret\|token"
+ - Secret management strategies
++- Understanding secret remediation approaches
+-   config/secrets.yml
+-2. **Detection** - Use git-secrets or similar tools:
++2. **Detection** - Scan for potential secrets in repository history:
+-   # Install git-secrets
+-   git secrets --install
+-   git secrets --register-aws
+-3. **Remediation** - Remove accidentally committed secrets:
++   git log -p | grep -i "password\|api_key\|secret\|token" | head -20
+-   git filter-repo --path config/secrets.yml --invert-paths
+-   bfg --delete-files secrets.yml
+-   * Use environment variables for secrets
+-   * Use secret management tools (HashiCorp Vault, AWS Secrets Manager)
+-   * Use GitHub Secrets for CI/CD
+-   * Enable secret scanning on GitHub
+-   git log -p | grep -i "password\|api_key\|secret"
+-   * Enable: Secret scanning
++     - Secret scanning (if available)
++   * Best practices for secret management (environment variables, secret vaults)
+-     - Demonstration of secret detection (if using tools)
+-     - Pattern search for potential secrets
++     * Secret management best practices
+    - What's your strategy for secret management in real projects?
+-| **Security Practices** | 10% | Commit signing, secret management, audit capabilities |
++| **Security Practices** | 10% | Commit signing consistency, secret management, audit capabilities |
+-# Credentials and Secrets
+-# Configuration with secrets
+-config/secrets.yml
+-secrets.json
++# Credentials and Secrets
++# Configuration with secrets
++config/secrets.yml
++secrets.json
++# Credentials and Secrets
++# Configuration with secrets
++config/secrets.yml
++secrets.json
++     - Demonstration of secret detection (if using tools)
++     - Pattern search for potential secrets
++   - What's your strategy for secret management in real projects?
++- No secrets in repository (even test/dummy ones)
++| **Security Practices** | 10% | Commit signing, secret management, audit capabilities |
++🔐 **Secret Management**:
++- Why is removing secrets from history insufficient?
++- What's your secret rotation strategy after exposure?
++- How do you prevent secrets in commits (pre-commit hooks)?
++- What tools help detect secrets in repositories?
++💎 Secret detection automated (pre-commit hooks)
++- Secret management strategies
++- Understands secret management best practices
++   gpg --list-secret-keys --keyid-format=long
++   config/secrets.yml
++2. **Detection** - Use git-secrets or similar tools:
++   # Install git-secrets
++   git secrets --install
++   git secrets --register-aws
++3. **Remediation** - Remove accidentally committed secrets:
++   git filter-repo --path config/secrets.yml --invert-paths
++   bfg --delete-files secrets.yml
++   * Use environment variables for secrets
++   * Use secret management tools (HashiCorp Vault, AWS Secrets Manager)
++   * Use GitHub Secrets for CI/CD
++   * Enable secret scanning on GitHub
++   git log -p | grep -i "password\|api_key\|secret"
++   * Enable: Secret scanning
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git log -p | grep -i "password\|api_key\|secret\|token" | head -20
+ - Secret management strategies
++- Understanding secret remediation approaches
+-   config/secrets.yml
+-2. **Detection** - Use git-secrets or similar tools:
++2. **Detection** - Scan for potential secrets in repository history:
+-   # Install git-secrets
+-   git secrets --install
+-   git secrets --register-aws
+-3. **Remediation** - Remove accidentally committed secrets:
++   git log -p | grep -i "password\|api_key\|secret\|token" | head -20
+-   git filter-repo --path config/secrets.yml --invert-paths
+-   bfg --delete-files secrets.yml
+-   * Use environment variables for secrets
+-   * Use secret management tools (HashiCorp Vault, AWS Secrets Manager)
+-   * Use GitHub Secrets for CI/CD
+-   * Enable secret scanning on GitHub
+-   git log -p | grep -i "password\|api_key\|secret"
+-   * Enable: Secret scanning
++     - Secret scanning (if available)
++   * Best practices for secret management (environment variables, secret vaults)
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git rev-list --objects --all | \
+  git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | \
+  sed -n 's/^blob //p' | \
+  sort --numeric-sort --key=2 | \
+  tail -n 10
+d1a2a1e8d2df29462c1593c768f2c8527d2de8ee 60873 pr_fail.PNG
+7ab0872359531893349b91da815205d4183ff2a8 60939 MERGE_FIX.PNG
+27fb90f1c0ee1d46f39a1ab02909dba503a968ce 61238 image.png
+84f85d4ec1780421e6897cf8794d2c8d84bc5a22 72952 commands_history2.PNG
+7f5bc8d09fbb5c662e758c99701cf4b89cc87c58 76324 commands_history.PNG
+b22514038049e2be6d4ccbe112ac9266f6328b76 76996 PAGE1.PNG
+9c9fb9cb167f841dc30289b4c1d57fcf5333ae43 77399 PAGE2.PNG
+8bc885b3abf028b09d9d19cef23aebeadf9bbcec 79018 PR_REVIEW.PNG
+97d5a2eec4fc171969842eaf8157d6aeae74b352 80565 image-1.png
+0688269a10dfc8d97b3d025cfc1f79f6698690a9 85617 gitlog.PNG
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git add .
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+$ git commit -m  'last commit to upload all pics to include in outcomes.md'
+[feature/protected-workflow e5242fa] last commit to upload all pics to include in outcomes.md
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 nonsensetive_data.PNG
+ create mode 100644 part4.PNG
+ create mode 100644 security_features.PNG
+ create mode 100644 signed_commit.PNG
+ create mode 100644 verified_commit.PNG
+
+Administrator@DESKTOP-BIJ31U3 MINGW64 ~/OneDrive - UNIVERSIDAD DE GRANADA/Desktop/DS/bloque3/taller-master-ugr (feature/protected-workflow)
+
