@@ -60,9 +60,10 @@ Completed all parts (1–5):
 
 ## Part 3 – GPG Signing Setup
 ### ✅ Screenshots :
--**GPG key generation output**:![gpgkey](image-10.png).
-- **GitHub GPG key settings** ![gpg_github](image-11.png).
--**GitHub commits showing Verified badge**.![verified_commit](image-12.png)![signed](image-13.png)
+-**GPG key generation output**:![gpgkey](gog.png).
+- **GitHub GPG key settings** <img width="996" height="253" alt="image" src="https://github.com/user-attachments/assets/f6710c91-78e5-4ed4-89c2-e54afc703a7b" />
+
+-**GitHub commits showing Verified badge**.![verified_commit](verified_commit.png)![signed](signed_commit.png)
 
 ## Part 4 – Sensitive Data Management
 ### ✅ Screenshots to Include:
@@ -256,6 +257,16 @@ Implementing these practices in real projects requires balancing security with d
 - Branch: https://github.com/asmajabr/taller-master-ugr/tree/i-have-nogroup-outcomes/master-of-the-universe
 - Key commits: Signed commits with Verified badge
 - Additional files: OUTCOMES.md, screenshots
+- <img width="724" height="159" alt="image" src="https://github.com/user-attachments/assets/8767c167-9113-4e22-9c07-1185066807ae" />
+  <img width="999" height="271" alt="image" src="https://github.com/user-attachments/assets/95772c36-b3fe-47bd-bbee-083657506f83" />
+  <img width="995" height="510" alt="image" src="https://github.com/user-attachments/assets/6774f1bd-4fe1-4ad9-824a-14355cebf7f4" />
+  <img width="1011" height="474" alt="image" src="https://github.com/user-attachments/assets/268e34c4-492f-4157-9d62-ad391e0fa547" />
+  <img width="1001" height="632" alt="image" src="https://github.com/user-attachments/assets/aecd64d0-2bc5-42c1-971c-809e2dfe1263" />
+
+
+
+
+
 
 ---
 
