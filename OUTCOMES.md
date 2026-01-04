@@ -63,7 +63,10 @@ Completed all parts (1–5):
 -**GPG key generation output**:![gpgkey](gog.png).
 - **GitHub GPG key settings** <img width="996" height="253" alt="image" src="https://github.com/user-attachments/assets/f6710c91-78e5-4ed4-89c2-e54afc703a7b" />
 
--**GitHub commits showing Verified badge**.![verified_commit](verified_commit.png)![signed](signed_commit.png)
+-**GitHub commits showing Verified badge**<img width="1002" height="608" alt="image" src="https://github.com/user-attachments/assets/5458705f-304b-45c9-81b5-8659d700e96e" />
+<img width="385" height="252" alt="image" src="https://github.com/user-attachments/assets/183a4b47-bf56-4dc5-b8ea-8ec3f045e611" />
+
+
 
 ## Part 4 – Sensitive Data Management
 ### ✅ Screenshots to Include:
