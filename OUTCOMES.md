@@ -13,6 +13,7 @@
 
 **What I did**:
 Completed all parts (1–5):
+<<<<<<< HEAD
 - Configured branch protection rules on `main` with the following criteria:
     ✅ Require a pull request before merging: Prevents direct pushes to main. All changes must come through a Pull Request (PR), enforcing collaboration and visibility
     ✅ Require approvals (at least 1): Ensures at least one reviewer approves before merging, improving code quality and reducing errors.
@@ -26,12 +27,93 @@ Completed all parts (1–5):
     
 
 
+=======
+
+## Part 1 – Branch Protection Rules
+### ✅ Screenshots:
+  -  **Branch Protection Settings** page showing all configured rules.
+      ![ruleset](image-4.png)![ruleset2](image-5.png)
+  -  **CODEOWNERS file** in the repository ![codeowners](image-8.png)
+
+### Explanation of Each Rule:
+- **Require a pull request before merging:** Prevents direct pushes to `main`. All changes must go through a PR for review.
+- **Require approvals (at least 1):** Ensures peer review before merging.
+- **Dismiss stale pull request approvals:** Invalidates old approvals after new commits.
+- **Require review from Code Owners:** Enforces domain-specific review using CODEOWNERS listed in this file  (The branch protection rule “Require setting references the CODEOWNERS file when a PR modifies files , GitHub automatically requests reviews from the specified owners before merging.)
+- **Require status checks to pass:** Blocks merging until CI checks succeed.
+- **Require branches to be up to date:** Ensures PR branch includes latest `main` changes.
+- **Require conversation resolution:** All review comments must be resolved before merging.
+- **Require signed commits:** Verifies commit authorship using GPG.
+- **Include administrators:** Applies rules to admins too.
+
+### Evidence of Workflow Impact:
+ - Branch protection rules enforced the following:
+ - Direct pushes to `main` were blocked; changes could only be merged via a Pull Request.
+ - Merge was prevented until all required conditions are met:
+        • Status checks passed .
+        • Commits were verified (signed).
+        • Conversations resolving.
+
+
+- PR required for merging.![pr_required](image-7.png)
+---
+## Part 2 – Protected Workflow Testing
+### ✅ Screenshots:
+- **blocked direct push error message** Direct push attempt blocked (![blockPush](image-6.png)).
+- **Pull Request page** showing required checks and approvals. ![protection](image-9.png)
+- **Code Owner review request**. ![review_required](image-10.png)
+
+### Documentation:
+- Demonstrated blocked direct push using `git push origin main`.
+- Created feature branch and PR workflow.
+- Observed required reviews and status checks on GitHub.
+>>>>>>> d424ad9 (push my last print screens)
 - Created feature branch and PR workflow.
 - Implemented GPG commit signing and verified on GitHub.
 - Reviewed `.gitignore` for sensitive patterns.
 - Scanned history for secrets and large files.
 - accomplished security audit and documented best practices.
 
+## Part 3 – GPG Signing Setup
+### ✅ Screenshots :
+-**GPG key generation output**:![gpgkey](image-10.png).
+- **GitHub GPG key settings** ![gpg_github](image-11.png).
+-**GitHub commits showing Verified badge**.![verified_commit](image-12.png)![signed](image-13.png)
+
+## Part 4 – Sensitive Data Management
+### ✅ Screenshots to Include:
+-`.gitignore` file: it is a file in github that tells git which files it should not commit nor track (like sensitive data )![gitignore](image-11.png)
+- **secret scan output**: ![secretscan_output](image-12.png)
+- **large file scan output**: in the above screenshot
+
+### `.gitignore` Snippet:
+```text
+# Ignore environment files
+.env
+*.pem
+*.key
+# Ignore credentials
+*.credentials
+```
+
+### Remediation: if secrets found
+- Use `git filter-repo` or BFG Repo-Cleaner.
+- Rotate credentials immediately if exposed.
+
+# Part 5 – Security Audit and Best Practices
+### ✅ Screenshots:
+- **GitHub security settings** (Code scanning, Dependabot alerts).![alt text](image-13.png)
+
+### Audit Findings:
+- No secrets found.
+- Largest files are screenshots I uploaded to the repository to support my documentation
+
+### Best Practices:
+- GPG signing prevents impersonation.
+- Branch protection enforces secure collaboration.
+- Secret management: use environment variables and vaults.
+
+---
 **All Commands I Used**:
 ```bash
 git checkout master-of-the-universe

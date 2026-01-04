@@ -1,0 +1,29 @@
+Branch Protection Rules applied on GitHub for main branch:
+
+
+✔ Require a pull request before merging
+    - Prevents direct pushes to main; all changes must go through PR.
+
+✔ Require approvals (at least 1)
+    - Ensures peer review before merging.
+
+✔ Dismiss stale pull request approvals when new commits are pushed
+    - Invalidates old approvals after new commits.
+
+✔ Require review from Code Owners
+    - Enforces domain-specific review based on CODEOWNERS file.
+
+✔ Require status checks to pass before merging
+    - Blocks merging until CI checks succeed (e.g., Status Check / build).
+
+✔ Require branches to be up to date before merging
+    - Ensures PR branch includes latest main changes.
+
+✔ Require conversation resolution before merging
+    - All review comments must be resolved before merging.
+
+✔ Require signed commits
+    - Verifies commit authorship using GPG signatures.
+
+✔ Include administrators
+    - Applies all protections to admins; no bypass allowed.
