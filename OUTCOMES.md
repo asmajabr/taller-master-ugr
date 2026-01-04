@@ -13,21 +13,6 @@
 
 **What I did**:
 Completed all parts (1–5):
-<<<<<<< HEAD
-- Configured branch protection rules on `main` with the following criteria:
-    ✅ Require a pull request before merging: Prevents direct pushes to main. All changes must come through a Pull Request (PR), enforcing collaboration and visibility
-    ✅ Require approvals (at least 1): Ensures at least one reviewer approves before merging, improving code quality and reducing errors.
-    ✅ Dismiss stale pull request approvals when new commits are pushed: Invalidates previous approvals if new commits are added, guaranteeing reviews apply to the latest code.
-    ✅ Require review from Code Owners : Automatically requests reviews from designated experts for specific files or directories, ensuring domain-specific oversight.
-    ✅ Require status checks to pass before merging: Blocks merging until CI checks (build, tests, security scans) succeed, maintaining stability and compliance.
-    ✅ Require branches to be up to date before merging: Forces PR branches to include the latest main changes, preventing integration issues and ensuring tests run on the correct base.
-    ✅ Require conversation resolution before merging: All review comments must be resolved before merging, ensuring no open concerns remain.
-    ✅ Require signed commits (for master-of-the-universe level): Verifies commit authorship using GPG/SSH signatures, strengthening security and auditability.
-    ✅ Include administrators (enforce rules on admins too): Applies all protections to admins, preventing bypass and ensuring consistent governance.
-    
-
-
-=======
 
 ## Part 1 – Branch Protection Rules
 ### ✅ Screenshots:
@@ -67,7 +52,6 @@ Completed all parts (1–5):
 - Demonstrated blocked direct push using `git push origin main`.
 - Created feature branch and PR workflow.
 - Observed required reviews and status checks on GitHub.
->>>>>>> d424ad9 (push my last print screens)
 - Created feature branch and PR workflow.
 - Implemented GPG commit signing and verified on GitHub.
 - Reviewed `.gitignore` for sensitive patterns.
@@ -269,7 +253,7 @@ Implementing these practices in real projects requires balancing security with d
 ---
 
 ## 🔗 Evidence/Artifacts
-- Branch: `feature/protected-workflow`
+- Branch: https://github.com/asmajabr/taller-master-ugr/tree/i-have-nogroup-outcomes/master-of-the-universe
 - Key commits: Signed commits with Verified badge
 - Additional files: OUTCOMES.md, screenshots
 
