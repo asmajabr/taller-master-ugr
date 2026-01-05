@@ -63,6 +63,19 @@ e2db1ca (tag: v0.0.1) Update README.md
 
 **Screenshots** (if applicable):
 ![tags](image-1.png)![page1](image-2.png)![page2](image-3.png)![mergefix![tagsss](image-5.png)](image-4.png)![taglog](image.png)
+<img width="974" height="677" alt="image" src="https://github.com/user-attachments/assets/a0cf9be3-26d4-44ef-8631-5d5901f8be5f" />
+<img width="897" height="705" alt="image" src="https://github.com/user-attachments/assets/de2a194f-0763-4b71-9c5a-4d60d34d04c1" />
+<img width="1069" height="465" alt="image" src="https://github.com/user-attachments/assets/ff3fd3e4-e762-4f84-a700-a8866f56ec72" />
+<img width="983" height="694" alt="image" src="https://github.com/user-attachments/assets/97dfe8a9-0093-4223-b4d5-b39c486e7fde" />
+<img width="964" height="705" alt="image" src="https://github.com/user-attachments/assets/e724df2a-b3b3-4c29-baac-80b878103fc2" />
+
+
+
+
+
+
+
+
 
 ## 🎯 Key Learnings
 
