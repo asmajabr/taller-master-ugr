@@ -62,7 +62,13 @@ e2db1ca (tag: v0.0.1) Update README.md
 4cc5635 Initial commit
 
 **Screenshots** (if applicable):
-![tags](tag1.png) ![tags2](tag2.png) ![page1](page1.png) ![page2](page2.png) ![mergefix](merge_fix.png) ![image](image.png)
+![tags1](TAG1.PNG)
+![tags2](TAG2.PNG)
+![page1](PAGE1.PNG)
+![page2](PAGE2.PNG)
+![mergefix](MERGE_FIX.PNG)
+![image](image.png)
+
 
 
 
